@@ -51,17 +51,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=newmain.c newAsmTemplate.s
+SOURCEFILES_QUOTED_IF_SPACED=newmain.c addition.s subtraction.s comparationEqual.s comparationLess.s
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/newmain.o ${OBJECTDIR}/newAsmTemplate.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/newmain.o.d ${OBJECTDIR}/newAsmTemplate.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/newmain.o ${OBJECTDIR}/addition.o ${OBJECTDIR}/subtraction.o ${OBJECTDIR}/comparationEqual.o ${OBJECTDIR}/comparationLess.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/newmain.o.d ${OBJECTDIR}/addition.o.d ${OBJECTDIR}/subtraction.o.d ${OBJECTDIR}/comparationEqual.o.d ${OBJECTDIR}/comparationLess.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/newmain.o ${OBJECTDIR}/newAsmTemplate.o
+OBJECTFILES=${OBJECTDIR}/newmain.o ${OBJECTDIR}/addition.o ${OBJECTDIR}/subtraction.o ${OBJECTDIR}/comparationEqual.o ${OBJECTDIR}/comparationLess.o
 
 # Source Files
-SOURCEFILES=newmain.c newAsmTemplate.s
+SOURCEFILES=newmain.c addition.s subtraction.s comparationEqual.s comparationLess.s
 
 
 
@@ -88,14 +88,14 @@ MP_PROCESSOR_OPTION=ATmega128
 # ------------------------------------------------------------------------------------
 # Rules for buildStep: compile
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
-${OBJECTDIR}/newmain.o: newmain.c  .generated_files/flags/default/596395518dfbb87c06784d3524c3812f60a6929 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+${OBJECTDIR}/newmain.o: newmain.c  .generated_files/flags/default/65a9fa3eb6e26a43ac0aa90bc235c2e835cea950 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/newmain.o.d 
 	@${RM} ${OBJECTDIR}/newmain.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1 -g -DDEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1 -gdwarf-2  -x c -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD)  -gdwarf-3 -mno-const-data-in-progmem     -MD -MP -MF "${OBJECTDIR}/newmain.o.d" -MT "${OBJECTDIR}/newmain.o.d" -MT ${OBJECTDIR}/newmain.o -o ${OBJECTDIR}/newmain.o newmain.c 
 	
 else
-${OBJECTDIR}/newmain.o: newmain.c  .generated_files/flags/default/a68f8a7b520944cf9edc00730bc6dd101298a32f .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+${OBJECTDIR}/newmain.o: newmain.c  .generated_files/flags/default/cf46adb4c60b3c1415040209702e445aa71688e0 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/newmain.o.d 
 	@${RM} ${OBJECTDIR}/newmain.o 
@@ -106,18 +106,54 @@ endif
 # ------------------------------------------------------------------------------------
 # Rules for buildStep: assemble
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
-${OBJECTDIR}/newAsmTemplate.o: newAsmTemplate.s  .generated_files/flags/default/a4504318c45bcd587cd5df12cd5e38e17e3036d5 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+${OBJECTDIR}/addition.o: addition.s  .generated_files/flags/default/814602c20826ecee3ae434d804d4318d098a1f5f .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
 	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/newAsmTemplate.o.d 
-	@${RM} ${OBJECTDIR}/newAsmTemplate.o 
-	${MP_CC} -c $(MP_EXTRA_AS_PRE) -mcpu=$(MP_PROCESSOR_OPTION)  -D__DEBUG=1 -g -DDEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1 -gdwarf-2  -x assembler-with-cpp -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  -gdwarf-3 -mno-const-data-in-progmem -Wa,--defsym=__MPLAB_BUILD=1,--defsym=__MPLAB_DEBUG=1,--defsym=__DEBUG=1,--defsym=__MPLAB_DEBUGGER_SIMULATOR=1   -MD -MP -MF "${OBJECTDIR}/newAsmTemplate.o.d" -MT "${OBJECTDIR}/newAsmTemplate.o.d" -MT ${OBJECTDIR}/newAsmTemplate.o -o ${OBJECTDIR}/newAsmTemplate.o  newAsmTemplate.s 
+	@${RM} ${OBJECTDIR}/addition.o.d 
+	@${RM} ${OBJECTDIR}/addition.o 
+	${MP_CC} -c $(MP_EXTRA_AS_PRE) -mcpu=$(MP_PROCESSOR_OPTION)  -D__DEBUG=1 -g -DDEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1 -gdwarf-2  -x assembler-with-cpp -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  -gdwarf-3 -mno-const-data-in-progmem -Wa,--defsym=__MPLAB_BUILD=1,--defsym=__MPLAB_DEBUG=1,--defsym=__DEBUG=1,--defsym=__MPLAB_DEBUGGER_SIMULATOR=1   -MD -MP -MF "${OBJECTDIR}/addition.o.d" -MT "${OBJECTDIR}/addition.o.d" -MT ${OBJECTDIR}/addition.o -o ${OBJECTDIR}/addition.o  addition.s 
+	
+${OBJECTDIR}/subtraction.o: subtraction.s  .generated_files/flags/default/857c83d99a0f94177350dfd131f8d5c188a68cb2 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/subtraction.o.d 
+	@${RM} ${OBJECTDIR}/subtraction.o 
+	${MP_CC} -c $(MP_EXTRA_AS_PRE) -mcpu=$(MP_PROCESSOR_OPTION)  -D__DEBUG=1 -g -DDEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1 -gdwarf-2  -x assembler-with-cpp -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  -gdwarf-3 -mno-const-data-in-progmem -Wa,--defsym=__MPLAB_BUILD=1,--defsym=__MPLAB_DEBUG=1,--defsym=__DEBUG=1,--defsym=__MPLAB_DEBUGGER_SIMULATOR=1   -MD -MP -MF "${OBJECTDIR}/subtraction.o.d" -MT "${OBJECTDIR}/subtraction.o.d" -MT ${OBJECTDIR}/subtraction.o -o ${OBJECTDIR}/subtraction.o  subtraction.s 
+	
+${OBJECTDIR}/comparationEqual.o: comparationEqual.s  .generated_files/flags/default/b963e22744a6d273f3614fe9b2629ff8852879ef .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/comparationEqual.o.d 
+	@${RM} ${OBJECTDIR}/comparationEqual.o 
+	${MP_CC} -c $(MP_EXTRA_AS_PRE) -mcpu=$(MP_PROCESSOR_OPTION)  -D__DEBUG=1 -g -DDEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1 -gdwarf-2  -x assembler-with-cpp -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  -gdwarf-3 -mno-const-data-in-progmem -Wa,--defsym=__MPLAB_BUILD=1,--defsym=__MPLAB_DEBUG=1,--defsym=__DEBUG=1,--defsym=__MPLAB_DEBUGGER_SIMULATOR=1   -MD -MP -MF "${OBJECTDIR}/comparationEqual.o.d" -MT "${OBJECTDIR}/comparationEqual.o.d" -MT ${OBJECTDIR}/comparationEqual.o -o ${OBJECTDIR}/comparationEqual.o  comparationEqual.s 
+	
+${OBJECTDIR}/comparationLess.o: comparationLess.s  .generated_files/flags/default/e58c6d2a74c95421c91df0ea36d408947c02ed07 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/comparationLess.o.d 
+	@${RM} ${OBJECTDIR}/comparationLess.o 
+	${MP_CC} -c $(MP_EXTRA_AS_PRE) -mcpu=$(MP_PROCESSOR_OPTION)  -D__DEBUG=1 -g -DDEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1 -gdwarf-2  -x assembler-with-cpp -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  -gdwarf-3 -mno-const-data-in-progmem -Wa,--defsym=__MPLAB_BUILD=1,--defsym=__MPLAB_DEBUG=1,--defsym=__DEBUG=1,--defsym=__MPLAB_DEBUGGER_SIMULATOR=1   -MD -MP -MF "${OBJECTDIR}/comparationLess.o.d" -MT "${OBJECTDIR}/comparationLess.o.d" -MT ${OBJECTDIR}/comparationLess.o -o ${OBJECTDIR}/comparationLess.o  comparationLess.s 
 	
 else
-${OBJECTDIR}/newAsmTemplate.o: newAsmTemplate.s  .generated_files/flags/default/8273236a3cafdc0c0eba02102aa268a794b9fe3b .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+${OBJECTDIR}/addition.o: addition.s  .generated_files/flags/default/b032fc8ca84303e78abf362fc509d0d5f27bd9e5 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
 	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/newAsmTemplate.o.d 
-	@${RM} ${OBJECTDIR}/newAsmTemplate.o 
-	${MP_CC} -c $(MP_EXTRA_AS_PRE) -mcpu=$(MP_PROCESSOR_OPTION)  -x assembler-with-cpp -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  -gdwarf-3 -mno-const-data-in-progmem -Wa,--defsym=__MPLAB_BUILD=1   -MD -MP -MF "${OBJECTDIR}/newAsmTemplate.o.d" -MT "${OBJECTDIR}/newAsmTemplate.o.d" -MT ${OBJECTDIR}/newAsmTemplate.o -o ${OBJECTDIR}/newAsmTemplate.o  newAsmTemplate.s 
+	@${RM} ${OBJECTDIR}/addition.o.d 
+	@${RM} ${OBJECTDIR}/addition.o 
+	${MP_CC} -c $(MP_EXTRA_AS_PRE) -mcpu=$(MP_PROCESSOR_OPTION)  -x assembler-with-cpp -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  -gdwarf-3 -mno-const-data-in-progmem -Wa,--defsym=__MPLAB_BUILD=1   -MD -MP -MF "${OBJECTDIR}/addition.o.d" -MT "${OBJECTDIR}/addition.o.d" -MT ${OBJECTDIR}/addition.o -o ${OBJECTDIR}/addition.o  addition.s 
+	
+${OBJECTDIR}/subtraction.o: subtraction.s  .generated_files/flags/default/165752f891e1218c7b82f7bf90573a5c8c28baa .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/subtraction.o.d 
+	@${RM} ${OBJECTDIR}/subtraction.o 
+	${MP_CC} -c $(MP_EXTRA_AS_PRE) -mcpu=$(MP_PROCESSOR_OPTION)  -x assembler-with-cpp -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  -gdwarf-3 -mno-const-data-in-progmem -Wa,--defsym=__MPLAB_BUILD=1   -MD -MP -MF "${OBJECTDIR}/subtraction.o.d" -MT "${OBJECTDIR}/subtraction.o.d" -MT ${OBJECTDIR}/subtraction.o -o ${OBJECTDIR}/subtraction.o  subtraction.s 
+	
+${OBJECTDIR}/comparationEqual.o: comparationEqual.s  .generated_files/flags/default/ccd5546bbe841c04e560be0826d434d3871596a9 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/comparationEqual.o.d 
+	@${RM} ${OBJECTDIR}/comparationEqual.o 
+	${MP_CC} -c $(MP_EXTRA_AS_PRE) -mcpu=$(MP_PROCESSOR_OPTION)  -x assembler-with-cpp -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  -gdwarf-3 -mno-const-data-in-progmem -Wa,--defsym=__MPLAB_BUILD=1   -MD -MP -MF "${OBJECTDIR}/comparationEqual.o.d" -MT "${OBJECTDIR}/comparationEqual.o.d" -MT ${OBJECTDIR}/comparationEqual.o -o ${OBJECTDIR}/comparationEqual.o  comparationEqual.s 
+	
+${OBJECTDIR}/comparationLess.o: comparationLess.s  .generated_files/flags/default/dea1e9811e643b0516620b3bab039c7ae31970df .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/comparationLess.o.d 
+	@${RM} ${OBJECTDIR}/comparationLess.o 
+	${MP_CC} -c $(MP_EXTRA_AS_PRE) -mcpu=$(MP_PROCESSOR_OPTION)  -x assembler-with-cpp -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  -gdwarf-3 -mno-const-data-in-progmem -Wa,--defsym=__MPLAB_BUILD=1   -MD -MP -MF "${OBJECTDIR}/comparationLess.o.d" -MT "${OBJECTDIR}/comparationLess.o.d" -MT ${OBJECTDIR}/comparationLess.o -o ${OBJECTDIR}/comparationLess.o  comparationLess.s 
 	
 endif
 

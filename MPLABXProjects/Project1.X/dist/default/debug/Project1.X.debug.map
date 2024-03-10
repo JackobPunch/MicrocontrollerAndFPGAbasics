@@ -14,8 +14,14 @@ Discarded input sections
  .text          0x0000000000000000        0x0 build/default/debug/newmain.o
  .data          0x0000000000000000        0x0 build/default/debug/newmain.o
  .bss           0x0000000000000000        0x0 build/default/debug/newmain.o
- .data          0x0000000000000000        0x0 build/default/debug/newAsmTemplate.o
- .bss           0x0000000000000000        0x0 build/default/debug/newAsmTemplate.o
+ .data          0x0000000000000000        0x0 build/default/debug/addition.o
+ .bss           0x0000000000000000        0x0 build/default/debug/addition.o
+ .data          0x0000000000000000        0x0 build/default/debug/subtraction.o
+ .bss           0x0000000000000000        0x0 build/default/debug/subtraction.o
+ .data          0x0000000000000000        0x0 build/default/debug/comparationEqual.o
+ .bss           0x0000000000000000        0x0 build/default/debug/comparationEqual.o
+ .data          0x0000000000000000        0x0 build/default/debug/comparationLess.o
+ .bss           0x0000000000000000        0x0 build/default/debug/comparationLess.o
  .text          0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.46/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr51\libc.a(exit.o)
  .data          0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.46/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr51\libc.a(exit.o)
  .bss           0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.46/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr51\libc.a(exit.o)
@@ -64,7 +70,10 @@ Address of section .data set to 0x800100
 LOAD C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/ATmega_DFP/3.1.264/xc8/avr/lib/avr51/crtatmega128.o
                 0x0000000000000001                __MPLAB_BUILD = 0x1
 LOAD build/default/debug/newmain.o
-LOAD build/default/debug/newAsmTemplate.o
+LOAD build/default/debug/addition.o
+LOAD build/default/debug/subtraction.o
+LOAD build/default/debug/comparationEqual.o
+LOAD build/default/debug/comparationLess.o
 START GROUP
 LOAD c:/program files/microchip/xc8/v2.46/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr51\libm.a
 END GROUP
@@ -358,42 +367,57 @@ END GROUP
 .debug_sfnames
  *(.debug_sfnames)
 
-.debug_aranges  0x0000000000000000       0x40
+.debug_aranges  0x0000000000000000       0xa0
  *(.debug_aranges)
  .debug_aranges
                 0x0000000000000000       0x20 build/default/debug/newmain.o
  .debug_aranges
-                0x0000000000000020       0x20 build/default/debug/newAsmTemplate.o
+                0x0000000000000020       0x20 build/default/debug/addition.o
+ .debug_aranges
+                0x0000000000000040       0x20 build/default/debug/subtraction.o
+ .debug_aranges
+                0x0000000000000060       0x20 build/default/debug/comparationEqual.o
+ .debug_aranges
+                0x0000000000000080       0x20 build/default/debug/comparationLess.o
 
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x0000000000000000      0xa39
+.debug_info     0x0000000000000000      0xc69
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x0000000000000000      0x780 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/ATmega_DFP/3.1.264/xc8/avr/lib/avr51/crtatmega128.o
- .debug_info    0x0000000000000780      0x259 build/default/debug/newmain.o
- .debug_info    0x00000000000009d9       0x60 build/default/debug/newAsmTemplate.o
+ .debug_info    0x0000000000000780      0x2bf build/default/debug/newmain.o
+ .debug_info    0x0000000000000a3f       0x86 build/default/debug/addition.o
+ .debug_info    0x0000000000000ac5       0x89 build/default/debug/subtraction.o
+ .debug_info    0x0000000000000b4e       0x8e build/default/debug/comparationEqual.o
+ .debug_info    0x0000000000000bdc       0x8d build/default/debug/comparationLess.o
 
-.debug_abbrev   0x0000000000000000      0x7a1
+.debug_abbrev   0x0000000000000000      0x7dd
  *(.debug_abbrev)
  .debug_abbrev  0x0000000000000000      0x718 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/ATmega_DFP/3.1.264/xc8/avr/lib/avr51/crtatmega128.o
  .debug_abbrev  0x0000000000000718       0x75 build/default/debug/newmain.o
- .debug_abbrev  0x000000000000078d       0x14 build/default/debug/newAsmTemplate.o
+ .debug_abbrev  0x000000000000078d       0x14 build/default/debug/addition.o
+ .debug_abbrev  0x00000000000007a1       0x14 build/default/debug/subtraction.o
+ .debug_abbrev  0x00000000000007b5       0x14 build/default/debug/comparationEqual.o
+ .debug_abbrev  0x00000000000007c9       0x14 build/default/debug/comparationLess.o
 
-.debug_line     0x0000000000000000      0x207
+.debug_line     0x0000000000000000      0x35d
  *(.debug_line .debug_line.* .debug_line_end)
  .debug_line    0x0000000000000000      0x16a C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/ATmega_DFP/3.1.264/xc8/avr/lib/avr51/crtatmega128.o
- .debug_line    0x000000000000016a       0x3d build/default/debug/newmain.o
- .debug_line    0x00000000000001a7       0x60 build/default/debug/newAsmTemplate.o
+ .debug_line    0x000000000000016a       0x4f build/default/debug/newmain.o
+ .debug_line    0x00000000000001b9       0x60 build/default/debug/addition.o
+ .debug_line    0x0000000000000219       0x69 build/default/debug/subtraction.o
+ .debug_line    0x0000000000000282       0x6e build/default/debug/comparationEqual.o
+ .debug_line    0x00000000000002f0       0x6d build/default/debug/comparationLess.o
 
 .debug_frame    0x0000000000000000       0x24
  *(.debug_frame)
  .debug_frame   0x0000000000000000       0x24 build/default/debug/newmain.o
 
-.debug_str      0x0000000000000000      0x27d
+.debug_str      0x0000000000000000      0x2ad
  *(.debug_str)
  .debug_str     0x0000000000000000      0x27d C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/ATmega_DFP/3.1.264/xc8/avr/lib/avr51/crtatmega128.o
- .debug_str     0x000000000000027d        0x0 build/default/debug/newmain.o
+ .debug_str     0x000000000000027d       0x30 build/default/debug/newmain.o
 
 .debug_loc      0x0000000000000000       0x4c
  *(.debug_loc)
@@ -436,70 +460,82 @@ LOAD data_init
  .text.exit     0x00000000000000a4       0x16 c:/program files/microchip/xc8/v2.46/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr51\libc.a(exit.o)
                 0x00000000000000a4                exit
 
-.text           0x00000000000000ba        0xe
- .text          0x00000000000000ba        0xe build/default/debug/newAsmTemplate.o
-                0x00000000000000ba                add_asm
+.text           0x00000000000000ba       0x14
+ .text          0x00000000000000ba       0x14 build/default/debug/comparationEqual.o
+                0x00000000000000ba                comparation1
 
-.text.main      0x00000000000000c8        0x6
- .text.main     0x00000000000000c8        0x6 build/default/debug/newmain.o
-                0x00000000000000c8                main
+.text           0x00000000000000ce       0x14
+ .text          0x00000000000000ce       0x14 build/default/debug/comparationLess.o
+                0x00000000000000ce                comparation2
 
-.text           0x00000000000000ce        0x4
- .text          0x00000000000000ce        0x4 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/ATmega_DFP/3.1.264/xc8/avr/lib/avr51/crtatmega128.o
-                0x00000000000000ce                __vector_22
-                0x00000000000000ce                __vector_28
-                0x00000000000000ce                __vector_1
-                0x00000000000000ce                __vector_32
-                0x00000000000000ce                __vector_34
-                0x00000000000000ce                __vector_24
-                0x00000000000000ce                __vector_12
-                0x00000000000000ce                __bad_interrupt
-                0x00000000000000ce                __vector_6
-                0x00000000000000ce                __vector_31
-                0x00000000000000ce                __vector_3
-                0x00000000000000ce                __vector_23
-                0x00000000000000ce                __vector_30
-                0x00000000000000ce                __vector_25
-                0x00000000000000ce                __vector_11
-                0x00000000000000ce                __vector_13
-                0x00000000000000ce                __vector_17
-                0x00000000000000ce                __vector_19
-                0x00000000000000ce                __vector_7
-                0x00000000000000ce                __vector_27
-                0x00000000000000ce                __vector_5
-                0x00000000000000ce                __vector_33
-                0x00000000000000ce                __vector_4
-                0x00000000000000ce                __vector_9
-                0x00000000000000ce                __vector_2
-                0x00000000000000ce                __vector_21
-                0x00000000000000ce                __vector_15
-                0x00000000000000ce                __vector_29
-                0x00000000000000ce                __vector_8
-                0x00000000000000ce                __vector_26
-                0x00000000000000ce                __vector_14
-                0x00000000000000ce                __vector_10
-                0x00000000000000ce                __vector_16
-                0x00000000000000ce                __vector_18
-                0x00000000000000ce                __vector_20
+.text.main      0x00000000000000e2       0x12
+ .text.main     0x00000000000000e2       0x12 build/default/debug/newmain.o
+                0x00000000000000e2                main
 
-.text._Exit     0x00000000000000d2        0x4
- .text._Exit    0x00000000000000d2        0x4 c:/program files/microchip/xc8/v2.46/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr51\libc.a(_Exit.o)
-                0x00000000000000d2                _Exit
+.text           0x00000000000000f4       0x12
+ .text          0x00000000000000f4       0x12 build/default/debug/subtraction.o
+                0x00000000000000f4                substraction
+
+.text           0x0000000000000106       0x10
+ .text          0x0000000000000106       0x10 build/default/debug/addition.o
+                0x0000000000000106                addition
+
+.text           0x0000000000000116        0x4
+ .text          0x0000000000000116        0x4 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/ATmega_DFP/3.1.264/xc8/avr/lib/avr51/crtatmega128.o
+                0x0000000000000116                __vector_22
+                0x0000000000000116                __vector_28
+                0x0000000000000116                __vector_1
+                0x0000000000000116                __vector_32
+                0x0000000000000116                __vector_34
+                0x0000000000000116                __vector_24
+                0x0000000000000116                __vector_12
+                0x0000000000000116                __bad_interrupt
+                0x0000000000000116                __vector_6
+                0x0000000000000116                __vector_31
+                0x0000000000000116                __vector_3
+                0x0000000000000116                __vector_23
+                0x0000000000000116                __vector_30
+                0x0000000000000116                __vector_25
+                0x0000000000000116                __vector_11
+                0x0000000000000116                __vector_13
+                0x0000000000000116                __vector_17
+                0x0000000000000116                __vector_19
+                0x0000000000000116                __vector_7
+                0x0000000000000116                __vector_27
+                0x0000000000000116                __vector_5
+                0x0000000000000116                __vector_33
+                0x0000000000000116                __vector_4
+                0x0000000000000116                __vector_9
+                0x0000000000000116                __vector_2
+                0x0000000000000116                __vector_21
+                0x0000000000000116                __vector_15
+                0x0000000000000116                __vector_29
+                0x0000000000000116                __vector_8
+                0x0000000000000116                __vector_26
+                0x0000000000000116                __vector_14
+                0x0000000000000116                __vector_10
+                0x0000000000000116                __vector_16
+                0x0000000000000116                __vector_18
+                0x0000000000000116                __vector_20
+
+.text._Exit     0x000000000000011a        0x4
+ .text._Exit    0x000000000000011a        0x4 c:/program files/microchip/xc8/v2.46/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr51\libc.a(_Exit.o)
+                0x000000000000011a                _Exit
 
 .text.__dummy_fini
-                0x00000000000000d6        0x2
+                0x000000000000011e        0x2
  .text.__dummy_fini
-                0x00000000000000d6        0x2 c:/program files/microchip/xc8/v2.46/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr51\libc.a(exit.o)
-                0x00000000000000d6                _fini
+                0x000000000000011e        0x2 c:/program files/microchip/xc8/v2.46/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr51\libc.a(exit.o)
+                0x000000000000011e                _fini
 
 .text.__dummy_funcs_on_exit
-                0x00000000000000d8        0x2
+                0x0000000000000120        0x2
  .text.__dummy_funcs_on_exit
-                0x00000000000000d8        0x2 c:/program files/microchip/xc8/v2.46/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr51\libc.a(exit.o)
-                0x00000000000000d8                __funcs_on_exit
+                0x0000000000000120        0x2 c:/program files/microchip/xc8/v2.46/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr51\libc.a(exit.o)
+                0x0000000000000120                __funcs_on_exit
 
 .text.__dummy_simulator_exit
-                0x00000000000000da        0x2
+                0x0000000000000122        0x2
  .text.__dummy_simulator_exit
-                0x00000000000000da        0x2 c:/program files/microchip/xc8/v2.46/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr51\libc.a(exit.o)
-                0x00000000000000da                __simulator_exit
+                0x0000000000000122        0x2 c:/program files/microchip/xc8/v2.46/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr51\libc.a(exit.o)
+                0x0000000000000122                __simulator_exit

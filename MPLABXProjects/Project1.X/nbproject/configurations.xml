@@ -18,7 +18,10 @@
                    displayName="Source Files"
                    projectFiles="true">
       <itemPath>newmain.c</itemPath>
-      <itemPath>newAsmTemplate.s</itemPath>
+      <itemPath>addition.s</itemPath>
+      <itemPath>subtraction.s</itemPath>
+      <itemPath>comparationEqual.s</itemPath>
+      <itemPath>comparationLess.s</itemPath>
     </logicalFolder>
   </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>

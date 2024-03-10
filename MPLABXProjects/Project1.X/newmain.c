@@ -11,11 +11,17 @@
 /*
  * 
  */
-extern void add_asm(void);
+extern void addition(void);
+extern void substraction(void);
+extern void comparation1(void);
+extern void comparation2(void);
 
 int main(int argc, char** argv) {
     
-    add_asm();
+    addition();
+    substraction();
+    comparation1();
+    comparation2();
     while(1);
     
     return (EXIT_SUCCESS);

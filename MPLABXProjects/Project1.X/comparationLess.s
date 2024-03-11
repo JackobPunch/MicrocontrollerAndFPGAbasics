@@ -10,7 +10,6 @@ Less:
     nop            ; No operation
 End:
     nop            ; No operation
-    nop            ; No operation
     ret            ; Return
 
 

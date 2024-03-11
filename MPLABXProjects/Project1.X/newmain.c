@@ -15,6 +15,7 @@ extern void addition(void);
 extern void substraction(void);
 extern void comparation1(void);
 extern void comparation2(void);
+extern void io_test(void);
 
 int main(int argc, char** argv) {
     
@@ -22,6 +23,7 @@ int main(int argc, char** argv) {
     substraction();
     comparation1();
     comparation2();
+    io_test();
     while(1);
     
     return (EXIT_SUCCESS);

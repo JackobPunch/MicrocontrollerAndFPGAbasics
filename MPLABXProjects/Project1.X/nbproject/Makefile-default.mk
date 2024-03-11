@@ -51,17 +51,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=newmain.c addition.s subtraction.s comparationEqual.s comparationLess.s
+SOURCEFILES_QUOTED_IF_SPACED=newmain.c addition.s subtraction.s comparationEqual.s comparationLess.s IO_testing.s
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/newmain.o ${OBJECTDIR}/addition.o ${OBJECTDIR}/subtraction.o ${OBJECTDIR}/comparationEqual.o ${OBJECTDIR}/comparationLess.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/newmain.o.d ${OBJECTDIR}/addition.o.d ${OBJECTDIR}/subtraction.o.d ${OBJECTDIR}/comparationEqual.o.d ${OBJECTDIR}/comparationLess.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/newmain.o ${OBJECTDIR}/addition.o ${OBJECTDIR}/subtraction.o ${OBJECTDIR}/comparationEqual.o ${OBJECTDIR}/comparationLess.o ${OBJECTDIR}/IO_testing.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/newmain.o.d ${OBJECTDIR}/addition.o.d ${OBJECTDIR}/subtraction.o.d ${OBJECTDIR}/comparationEqual.o.d ${OBJECTDIR}/comparationLess.o.d ${OBJECTDIR}/IO_testing.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/newmain.o ${OBJECTDIR}/addition.o ${OBJECTDIR}/subtraction.o ${OBJECTDIR}/comparationEqual.o ${OBJECTDIR}/comparationLess.o
+OBJECTFILES=${OBJECTDIR}/newmain.o ${OBJECTDIR}/addition.o ${OBJECTDIR}/subtraction.o ${OBJECTDIR}/comparationEqual.o ${OBJECTDIR}/comparationLess.o ${OBJECTDIR}/IO_testing.o
 
 # Source Files
-SOURCEFILES=newmain.c addition.s subtraction.s comparationEqual.s comparationLess.s
+SOURCEFILES=newmain.c addition.s subtraction.s comparationEqual.s comparationLess.s IO_testing.s
 
 
 
@@ -130,6 +130,12 @@ ${OBJECTDIR}/comparationLess.o: comparationLess.s  .generated_files/flags/defaul
 	@${RM} ${OBJECTDIR}/comparationLess.o 
 	${MP_CC} -c $(MP_EXTRA_AS_PRE) -mcpu=$(MP_PROCESSOR_OPTION)  -D__DEBUG=1 -g -DDEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1 -gdwarf-2  -x assembler-with-cpp -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  -gdwarf-3 -mno-const-data-in-progmem -Wa,--defsym=__MPLAB_BUILD=1,--defsym=__MPLAB_DEBUG=1,--defsym=__DEBUG=1,--defsym=__MPLAB_DEBUGGER_SIMULATOR=1   -MD -MP -MF "${OBJECTDIR}/comparationLess.o.d" -MT "${OBJECTDIR}/comparationLess.o.d" -MT ${OBJECTDIR}/comparationLess.o -o ${OBJECTDIR}/comparationLess.o  comparationLess.s 
 	
+${OBJECTDIR}/IO_testing.o: IO_testing.s  .generated_files/flags/default/949494662b649904aa8ea55854a37f82809ecf63 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/IO_testing.o.d 
+	@${RM} ${OBJECTDIR}/IO_testing.o 
+	${MP_CC} -c $(MP_EXTRA_AS_PRE) -mcpu=$(MP_PROCESSOR_OPTION)  -D__DEBUG=1 -g -DDEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1 -gdwarf-2  -x assembler-with-cpp -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  -gdwarf-3 -mno-const-data-in-progmem -Wa,--defsym=__MPLAB_BUILD=1,--defsym=__MPLAB_DEBUG=1,--defsym=__DEBUG=1,--defsym=__MPLAB_DEBUGGER_SIMULATOR=1   -MD -MP -MF "${OBJECTDIR}/IO_testing.o.d" -MT "${OBJECTDIR}/IO_testing.o.d" -MT ${OBJECTDIR}/IO_testing.o -o ${OBJECTDIR}/IO_testing.o  IO_testing.s 
+	
 else
 ${OBJECTDIR}/addition.o: addition.s  .generated_files/flags/default/b032fc8ca84303e78abf362fc509d0d5f27bd9e5 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
 	@${MKDIR} "${OBJECTDIR}" 
@@ -154,6 +160,12 @@ ${OBJECTDIR}/comparationLess.o: comparationLess.s  .generated_files/flags/defaul
 	@${RM} ${OBJECTDIR}/comparationLess.o.d 
 	@${RM} ${OBJECTDIR}/comparationLess.o 
 	${MP_CC} -c $(MP_EXTRA_AS_PRE) -mcpu=$(MP_PROCESSOR_OPTION)  -x assembler-with-cpp -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  -gdwarf-3 -mno-const-data-in-progmem -Wa,--defsym=__MPLAB_BUILD=1   -MD -MP -MF "${OBJECTDIR}/comparationLess.o.d" -MT "${OBJECTDIR}/comparationLess.o.d" -MT ${OBJECTDIR}/comparationLess.o -o ${OBJECTDIR}/comparationLess.o  comparationLess.s 
+	
+${OBJECTDIR}/IO_testing.o: IO_testing.s  .generated_files/flags/default/55cad0c4ae12020712b92f4eca1effdcd470e1f .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/IO_testing.o.d 
+	@${RM} ${OBJECTDIR}/IO_testing.o 
+	${MP_CC} -c $(MP_EXTRA_AS_PRE) -mcpu=$(MP_PROCESSOR_OPTION)  -x assembler-with-cpp -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  -gdwarf-3 -mno-const-data-in-progmem -Wa,--defsym=__MPLAB_BUILD=1   -MD -MP -MF "${OBJECTDIR}/IO_testing.o.d" -MT "${OBJECTDIR}/IO_testing.o.d" -MT ${OBJECTDIR}/IO_testing.o -o ${OBJECTDIR}/IO_testing.o  IO_testing.s 
 	
 endif
 

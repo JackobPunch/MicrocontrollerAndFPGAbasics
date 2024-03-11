@@ -1,3 +1,5 @@
+Add SREG register to see flags.
+
 C (Carry):
 The Carry flag is set if an arithmetic operation generates a carry out of the most significant bit (MSB) or borrow into the MSB.
 It's also used in bitwise shift operations to store the bit shifted out.

@@ -22,7 +22,8 @@
       <itemPath>subtraction.s</itemPath>
       <itemPath>comparationEqual.s</itemPath>
       <itemPath>comparationLess.s</itemPath>
-      <itemPath>IO_testing.s</itemPath>
+      <itemPath>diode.s</itemPath>
+      <itemPath>blink.s</itemPath>
     </logicalFolder>
   </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>

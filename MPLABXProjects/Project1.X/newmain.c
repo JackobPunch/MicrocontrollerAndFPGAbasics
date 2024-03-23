@@ -7,6 +7,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+//#include <avr/io.h>
 
 /*
  * 
@@ -15,7 +16,8 @@ extern void addition(void);
 extern void substraction(void);
 extern void comparation1(void);
 extern void comparation2(void);
-extern void io_test(void);
+extern void diode(void);
+extern void blink(void);
 
 int main(int argc, char** argv) {
     
@@ -23,7 +25,11 @@ int main(int argc, char** argv) {
     substraction();
     comparation1();
     comparation2();
-    io_test();
+    //DDRA = 0x00; ; Set all A ports as an inputs
+    diode();
+    for(int i=0;i<3;i++){
+    blink();
+    }
     while(1);
     
     return (EXIT_SUCCESS);

@@ -1,6 +1,6 @@
 .global substraction
     
-substraction:	   ; Simple subtraction function 511 - 513
+substraction:	   ; Simple subtraction function 513 - 511
     nop            ; No operation
     ldi r17, 2     ; Set carry register r17 to 2
     ldi r16, 1     ; Set carry register r16 to 1

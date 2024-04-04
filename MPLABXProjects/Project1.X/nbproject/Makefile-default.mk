@@ -51,17 +51,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=newmain.c addition.s subtraction.s comparationEqual.s comparationLess.s diode.s blink.s
+SOURCEFILES_QUOTED_IF_SPACED=newmain.c addition.s subtraction.s comparationEqual.s comparationLess.s diode.s blink.s blinkIf.s
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/newmain.o ${OBJECTDIR}/addition.o ${OBJECTDIR}/subtraction.o ${OBJECTDIR}/comparationEqual.o ${OBJECTDIR}/comparationLess.o ${OBJECTDIR}/diode.o ${OBJECTDIR}/blink.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/newmain.o.d ${OBJECTDIR}/addition.o.d ${OBJECTDIR}/subtraction.o.d ${OBJECTDIR}/comparationEqual.o.d ${OBJECTDIR}/comparationLess.o.d ${OBJECTDIR}/diode.o.d ${OBJECTDIR}/blink.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/newmain.o ${OBJECTDIR}/addition.o ${OBJECTDIR}/subtraction.o ${OBJECTDIR}/comparationEqual.o ${OBJECTDIR}/comparationLess.o ${OBJECTDIR}/diode.o ${OBJECTDIR}/blink.o ${OBJECTDIR}/blinkIf.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/newmain.o.d ${OBJECTDIR}/addition.o.d ${OBJECTDIR}/subtraction.o.d ${OBJECTDIR}/comparationEqual.o.d ${OBJECTDIR}/comparationLess.o.d ${OBJECTDIR}/diode.o.d ${OBJECTDIR}/blink.o.d ${OBJECTDIR}/blinkIf.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/newmain.o ${OBJECTDIR}/addition.o ${OBJECTDIR}/subtraction.o ${OBJECTDIR}/comparationEqual.o ${OBJECTDIR}/comparationLess.o ${OBJECTDIR}/diode.o ${OBJECTDIR}/blink.o
+OBJECTFILES=${OBJECTDIR}/newmain.o ${OBJECTDIR}/addition.o ${OBJECTDIR}/subtraction.o ${OBJECTDIR}/comparationEqual.o ${OBJECTDIR}/comparationLess.o ${OBJECTDIR}/diode.o ${OBJECTDIR}/blink.o ${OBJECTDIR}/blinkIf.o
 
 # Source Files
-SOURCEFILES=newmain.c addition.s subtraction.s comparationEqual.s comparationLess.s diode.s blink.s
+SOURCEFILES=newmain.c addition.s subtraction.s comparationEqual.s comparationLess.s diode.s blink.s blinkIf.s
 
 
 
@@ -142,6 +142,12 @@ ${OBJECTDIR}/blink.o: blink.s  .generated_files/flags/default/3c0fbbff31662fe96c
 	@${RM} ${OBJECTDIR}/blink.o 
 	${MP_CC} -c $(MP_EXTRA_AS_PRE) -mcpu=$(MP_PROCESSOR_OPTION)  -D__DEBUG=1 -g -DDEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1 -gdwarf-2  -x assembler-with-cpp -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  -gdwarf-3 -mno-const-data-in-progmem -Wa,--defsym=__MPLAB_BUILD=1,--defsym=__MPLAB_DEBUG=1,--defsym=__DEBUG=1,--defsym=__MPLAB_DEBUGGER_SIMULATOR=1   -MD -MP -MF "${OBJECTDIR}/blink.o.d" -MT "${OBJECTDIR}/blink.o.d" -MT ${OBJECTDIR}/blink.o -o ${OBJECTDIR}/blink.o  blink.s 
 	
+${OBJECTDIR}/blinkIf.o: blinkIf.s  .generated_files/flags/default/a769acfd14fbef1b40b53f2857ab2f940163eae3 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/blinkIf.o.d 
+	@${RM} ${OBJECTDIR}/blinkIf.o 
+	${MP_CC} -c $(MP_EXTRA_AS_PRE) -mcpu=$(MP_PROCESSOR_OPTION)  -D__DEBUG=1 -g -DDEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1 -gdwarf-2  -x assembler-with-cpp -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  -gdwarf-3 -mno-const-data-in-progmem -Wa,--defsym=__MPLAB_BUILD=1,--defsym=__MPLAB_DEBUG=1,--defsym=__DEBUG=1,--defsym=__MPLAB_DEBUGGER_SIMULATOR=1   -MD -MP -MF "${OBJECTDIR}/blinkIf.o.d" -MT "${OBJECTDIR}/blinkIf.o.d" -MT ${OBJECTDIR}/blinkIf.o -o ${OBJECTDIR}/blinkIf.o  blinkIf.s 
+	
 else
 ${OBJECTDIR}/addition.o: addition.s  .generated_files/flags/default/b032fc8ca84303e78abf362fc509d0d5f27bd9e5 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
 	@${MKDIR} "${OBJECTDIR}" 
@@ -178,6 +184,12 @@ ${OBJECTDIR}/blink.o: blink.s  .generated_files/flags/default/f7b4fd235e51bc5d02
 	@${RM} ${OBJECTDIR}/blink.o.d 
 	@${RM} ${OBJECTDIR}/blink.o 
 	${MP_CC} -c $(MP_EXTRA_AS_PRE) -mcpu=$(MP_PROCESSOR_OPTION)  -x assembler-with-cpp -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  -gdwarf-3 -mno-const-data-in-progmem -Wa,--defsym=__MPLAB_BUILD=1   -MD -MP -MF "${OBJECTDIR}/blink.o.d" -MT "${OBJECTDIR}/blink.o.d" -MT ${OBJECTDIR}/blink.o -o ${OBJECTDIR}/blink.o  blink.s 
+	
+${OBJECTDIR}/blinkIf.o: blinkIf.s  .generated_files/flags/default/4a2b2f6b14ecfecfcef020556224b52dbb3f8d83 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/blinkIf.o.d 
+	@${RM} ${OBJECTDIR}/blinkIf.o 
+	${MP_CC} -c $(MP_EXTRA_AS_PRE) -mcpu=$(MP_PROCESSOR_OPTION)  -x assembler-with-cpp -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  -gdwarf-3 -mno-const-data-in-progmem -Wa,--defsym=__MPLAB_BUILD=1   -MD -MP -MF "${OBJECTDIR}/blinkIf.o.d" -MT "${OBJECTDIR}/blinkIf.o.d" -MT ${OBJECTDIR}/blinkIf.o -o ${OBJECTDIR}/blinkIf.o  blinkIf.s 
 	
 endif
 

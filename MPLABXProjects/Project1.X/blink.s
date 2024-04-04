@@ -12,11 +12,11 @@ blink:
     
     ldi r20, 0xFF
     ldi r21, 0xFF
-delay_loop:
-    dec r21
-    brne delay_loop
-    dec r20
-    brne delay_loop
+;delay_loop:
+   ; dec r21
+    ;brne delay_loop
+    ;dec r20
+    ;brne delay_loop
     
     ret
 

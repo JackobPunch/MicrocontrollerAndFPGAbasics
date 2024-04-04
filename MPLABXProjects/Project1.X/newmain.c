@@ -18,6 +18,7 @@ extern void comparation1(void);
 extern void comparation2(void);
 extern void diode(void);
 extern void blink(void);
+extern void blinkIf(void);
 
 int main(int argc, char** argv) {
     
@@ -30,6 +31,7 @@ int main(int argc, char** argv) {
     for(int i=0;i<3;i++){
     blink();
     }
+    blinkIf();
     while(1);
     
     return (EXIT_SUCCESS);

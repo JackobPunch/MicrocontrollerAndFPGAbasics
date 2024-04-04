@@ -24,6 +24,7 @@
       <itemPath>comparationLess.s</itemPath>
       <itemPath>diode.s</itemPath>
       <itemPath>blink.s</itemPath>
+      <itemPath>blinkIf.s</itemPath>
     </logicalFolder>
   </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>

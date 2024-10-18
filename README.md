@@ -2,6 +2,12 @@
 
 This repository contains assignments and projects related to the university course ‘Fundamentals of Microprocessor Technology’. The projects cover the basics of microprocessor technology, using assembler and C programming and working with various microcontrollers.
 
+
+<div align="center">
+   <img src="https://github.com/JackobPunch/FundamentalsOfMicroprocessorTechnology/blob/main/gif.gif" alt="GIF" />
+</div>
+
+
 ## Projects
 
 ### 1. **Project1 - ATmega128 Assembly Language**
@@ -23,4 +29,3 @@ This repository contains assignments and projects related to the university cour
    - Interrupt handling
    - Timers and counters
    - Basic peripheral interfacing (e.g., LEDs, buttons)
-

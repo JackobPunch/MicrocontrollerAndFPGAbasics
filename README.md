@@ -1,4 +1,4 @@
-# Fundamentals of Microprocessor Technology - University Assignments
+# Fundamentals of Microprocessor Technology
 
 This repository contains assignments and projects related to the university course ‘Fundamentals of Microprocessor Technology’. The projects cover the basics of microprocessor technology, using assembler and C programming and working with various microcontrollers.
 

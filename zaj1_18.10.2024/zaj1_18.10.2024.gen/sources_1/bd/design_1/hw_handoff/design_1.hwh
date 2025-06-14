@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri Oct 18 16:50:06 2024" VIVADOVERSION="2023.2">
+
+  <SYSTEMINFO ARCH="zynq" BOARD="digilentinc.com:arty-z7-10:part0:1.1" DEVICE="7z010" NAME="design_1" PACKAGE="clg400" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" NAME="in1_0" SIGIS="undef" SIGNAME="External_Ports_in1_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="led1_0" PORT="in1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="in1_1" SIGIS="undef" SIGNAME="External_Ports_in1_1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="led1_0" PORT="in3"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="in2_0" SIGIS="undef" SIGNAME="External_Ports_in2_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="led2_0" PORT="in2"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="in4_0" SIGIS="undef" SIGNAME="External_Ports_in4_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="switch_0" PORT="in4"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="in5_0" SIGIS="undef" SIGNAME="External_Ports_in5_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="switch_0" PORT="in5"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="out1_0" SIGIS="undef" SIGNAME="led1_0_out1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="led1_0" PORT="out1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="out2_0" SIGIS="undef" SIGNAME="led2_0_out2">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="led2_0" PORT="out2"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="out3_0" SIGIS="undef" SIGNAME="switch_0_out3">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="switch_0" PORT="out3"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="1" FULLNAME="/led1_0" HWVERSION="1.0" INSTANCE="led1_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="led1" VLNV="xilinx.com:module_ref:led1:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_led1_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="in1" SIGIS="undef" SIGNAME="External_Ports_in1_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="in1_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="in3" SIGIS="undef" SIGNAME="External_Ports_in1_1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="in1_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="out1" SIGIS="undef" SIGNAME="led1_0_out1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="out1_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/led2_0" HWVERSION="1.0" INSTANCE="led2_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="led2" VLNV="xilinx.com:module_ref:led2:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_led2_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="in2" SIGIS="undef" SIGNAME="External_Ports_in2_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="in2_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="out2" SIGIS="undef" SIGNAME="led2_0_out2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="out2_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/switch_0" HWVERSION="1.0" INSTANCE="switch_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="switch" VLNV="xilinx.com:module_ref:switch:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_switch_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="in4" SIGIS="undef" SIGNAME="External_Ports_in4_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="in4_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="in5" SIGIS="undef" SIGNAME="External_Ports_in5_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="in5_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="out3" SIGIS="undef" SIGNAME="switch_0_out3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="out3_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

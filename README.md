@@ -45,7 +45,7 @@ An initial project using the **FPGA fabric** of the Digilent Arty Z7-10 board (Z
 > 🛑 Note: Although the Arty Z7-10 includes an ARM microcontroller (Processing System), this project focuses solely on the FPGA (Programmable Logic) to build a foundation in digital hardware design.
 
 <div align="center">
-   <img src="https://github.com/JackobPunch/IndustrialSolutionsOfElectricDrives/blob/main/gif.gif" alt="GIF" />
+   <img src="https://github.com/JackobPunch/FundamentalsOfMicroprocessorTechnology/blob/main/gif2.gif" alt="GIF" />
 </div>
 
 ---

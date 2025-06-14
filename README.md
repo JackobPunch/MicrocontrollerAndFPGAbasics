@@ -1,31 +1,60 @@
-# Fundamentals of Microprocessor Technology
+# Microcontroller and FPGA Projects
 
-This repository contains assignments and projects related to the university course ‘Fundamentals of Microprocessor Technology’. The projects cover the basics of microprocessor technology, using assembler and C programming and working with various microcontrollers.
-
+This repository showcases a variety of projects developed during university courses focused on **microcontroller programming** and **FPGA-based digital systems**. These assignments span multiple platforms—including ATmega, PIC, and Digilent Arty Z7-10 and involve **low-level programming in Assembly and C**, as well as introductory work with **FPGA logic design using Vivado**.
 
 <div align="center">
    <img src="https://github.com/JackobPunch/FundamentalsOfMicroprocessorTechnology/blob/main/gif.gif" alt="GIF" />
 </div>
 
+---
 
-## Projects
+## 🔧 Projects Overview
 
-### 1. **Project1 - ATmega128 Assembly Language**
-   This project serves as an introduction to assembly language using the ATmega128 microcontroller. It includes basic concepts of assembly programming, manipulation of registers, memory handling, and interfacing with basic peripherals.
+### 📘 ATmega128 – Assembly
+An introductory project using the ATmega128 microcontroller to practice low-level programming with assembly language.
 
-   **Topics covered in Project1:**
-   - Register operations
-   - Arithmetic and logic operations
-   - Program control (loops, conditions)
-   - Basic I/O control
+**Topics covered:**
+- Register manipulation
+- Arithmetic and logic operations
+- Loops and conditional statements
+- Basic input/output control
 
 ---
 
-### 2. **Test1 - PIC24FJ128GA705**
-   This project introduces programming with the PIC24FJ128GA705 microcontroller. It involves working with C programming and explores more advanced peripheral handling and interfacing techniques.
+### 📗 PIC24FJ128GA705 – Embedded C
+A project exploring embedded C programming on the PIC24FJ128GA705 microcontroller.
 
-   **Topics covered in Test1:**
-   - Setting up and using GPIOs
-   - Interrupt handling
-   - Timers and counters
-   - Basic peripheral interfacing (e.g., LEDs, buttons)
+**Topics covered:**
+- GPIO setup and control
+- Interrupt service routines
+- Timer and counter configuration
+- Peripheral interfacing (LEDs, buttons)
+
+---
+
+### ⚙️ Digilent Arty Z7-10 – FPGA
+An initial project using the **FPGA fabric** of the Digilent Arty Z7-10 board (Zynq-7000 SoC) to implement simple digital logic circuits.
+
+📁 Folder: `zaj1_18.10.2024`
+
+**Features:**
+- Reading input from switches and buttons
+- Controlling LEDs based on input logic
+- Introductory use of **Vivado** for synthesis, implementation, and bitstream generation
+
+> 🛑 Note: Although the Arty Z7-10 includes an ARM microcontroller (Processing System), this project focuses solely on the FPGA (Programmable Logic) to build a foundation in digital hardware design.
+
+<div align="center">
+   <img src="https://github.com/JackobPunch/IndustrialSolutionsOfElectricDrives/blob/main/gif.gif" alt="GIF" />
+</div>
+
+---
+
+## 💡 Tools & Platforms Used
+
+- **Microcontrollers**: ATmega128, PIC24FJ128GA705
+- **Development Boards**: Digilent Arty Z7-10 (FPGA used only)
+- **Languages**: Assembly, C
+- **Software Tools**:
+  - MPLAB X
+  - Xilinx Vivado

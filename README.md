@@ -1,6 +1,6 @@
-# 🚀 Embedded Systems & FPGA Portfolio
+# 🎓 University Embedded Systems Learning Journey
 
-> **Professional embedded systems portfolio showcasing progression from assembly language fundamentals to advanced microcontroller programming and FPGA digital design**
+> **Collection of university coursework exploring embedded systems fundamentals - from assembly language basics to microcontroller programming and FPGA digital design**
 
 <div align="center">
    <img src="https://github.com/JackobPunch/FundamentalsOfMicroprocessorTechnology/blob/main/gif.gif" alt="PIC24 Microcontroller Demo" width="400"/>
@@ -9,44 +9,44 @@
 
 ---
 
-## 🎯 **Skills Demonstrated**
+## 📚 **What I Learned During University**
 
-### **� Programming Languages**
+### **💻 Programming Languages Explored**
 
-- **Assembly Language** - ATmega128 (AVR) low-level programming
-- **Embedded C** - PIC24FJ128GA705 real-time applications
-- **VHDL** - FPGA digital logic design
+- **Assembly Language** - Basic ATmega128 programming during introductory coursework
+- **Embedded C** - PIC24FJ128GA705 applications with university guidance
+- **VHDL** - Introduction to FPGA digital logic concepts
 
-### **🔧 Hardware Platforms**
+### **🔧 Hardware Platforms Used in Class**
 
-- **ATmega128** - 8-bit AVR microcontroller
-- **PIC24FJ128GA705** - 16-bit microcontroller with advanced peripherals
-- **Digilent Arty Z7-10** - Zynq-7000 FPGA development board
+- **ATmega128** - 8-bit microcontroller for assembly learning exercises
+- **PIC24FJ128GA705** - 16-bit microcontroller for C programming practice
+- **Digilent Arty Z7-10** - FPGA board for basic digital logic experiments
 
-### **⚡ Technical Expertise**
+### **🎓 Concepts Practiced**
 
-- **Low-level Programming** - Direct register manipulation, bit operations
-- **Real-time Systems** - Hardware timers, interrupt handling, ADC processing
-- **Digital Logic Design** - Combinational logic, FPGA synthesis
-- **Mixed-language Development** - C/Assembly integration
-- **Professional Documentation** - Comprehensive technical writing
+- **Low-level Programming** - Learning register manipulation and bit operations
+- **Basic Embedded Systems** - Simple timers, GPIO, and ADC usage
+- **Digital Logic Basics** - Combinational circuits in VHDL
+- **Development Process** - Using industry tools under instructor guidance
+- **Documentation** - Learning to organize and explain technical work
 
-### **�️ Development Tools**
+### **🛠️ Development Tools Learned**
 
-- **MPLAB X IDE** - Microchip development environment
-- **XC8/XC16 Compilers** - Optimized embedded C compilation
-- **Xilinx Vivado** - FPGA synthesis and implementation
-- **Microchip Code Configurator (MCC)** - Hardware abstraction layer generation
+- **MPLAB X IDE** - Introduction to Microchip development environment
+- **XC8/XC16 Compilers** - Basic embedded C compilation
+- **Xilinx Vivado** - Introduction to FPGA development workflow
+- **Microchip Code Configurator (MCC)** - Hardware configuration tool basics
 
 ---
 
-## 📋 **Project Overview** | 🔰 **Beginner** → 🟡 **Intermediate** → 🔴 **Advanced**
+## 📋 **University Coursework Projects**
 
-| Project                       | Difficulty   | Platform        | Key Skills                                          | Demo                                    |
-| ----------------------------- | ------------ | --------------- | --------------------------------------------------- | --------------------------------------- |
-| **🔰 Assembly Fundamentals**  | Beginner     | ATmega128       | Register operations, arithmetic, I/O control        | [📁 Details](MPLABXProjects/Project1.X) |
-| **🟡 Embedded C Programming** | Intermediate | PIC24FJ128GA705 | ADC, timers, GPIO, interrupts, data structures      | [📁 Details](MPLABXProjects/test1.X)    |
-| **🔴 FPGA Digital Logic**     | Advanced     | Arty Z7-10      | VHDL, synthesis, logic design, hardware description | [📁 Details](zaj1_18.10.2024)           |
+| Project                | Course Level | Platform        | What I Practiced                                    | Details                                   |
+| ---------------------- | ------------ | --------------- | --------------------------------------------------- | ----------------------------------------- |
+| **🔰 Assembly Basics** | Introductory | ATmega128       | Register operations, simple arithmetic, basic I/O   | [📁 View Code](MPLABXProjects/Project1.X) |
+| **🟡 Embedded C**      | Intermediate | PIC24FJ128GA705 | GPIO control, timers, ADC reading, basic structures | [📁 View Code](MPLABXProjects/test1.X)    |
+| **🔴 FPGA Logic**      | Advanced     | Arty Z7-10      | Simple VHDL circuits, basic synthesis concepts      | [📁 View Code](zaj1_18.10.2024)           |
 
 ---
 
@@ -69,61 +69,61 @@ graph LR
 
 ---
 
-## 🎯 **Quick Navigation**
+## 📂 **Project Navigation**
 
-### **🔰 Start Here: Assembly Language Foundation**
+### **🔰 Assembly Language Exercises**
 
-� [`MPLABXProjects/Project1.X`](MPLABXProjects/Project1.X)
+📁 [`MPLABXProjects/Project1.X`](MPLABXProjects/Project1.X)
 
-- **What you'll see:** Direct CPU instruction programming, register manipulation
+- **What's inside:** Basic assembly language exercises from introductory course
 - **Key files:** `addition.s`, `subtraction.s`, `blink.s`, `diode.s`
-- **Skills shown:** Low-level programming, bit operations, conditional logic
+- **What I learned:** Register usage, simple arithmetic, basic I/O operations
 
-### **🟡 Advanced Embedded: Real Microcontroller Application**
+### **🟡 Embedded C Practice**
 
 📁 [`MPLABXProjects/test1.X`](MPLABXProjects/test1.X)
 
-- **What you'll see:** Professional embedded C with hardware peripherals
-- **Key files:** `main.c` (learning process), `main_clean.c` (production code)
-- **Skills shown:** ADC processing, timer interrupts, GPIO control, data structures
+- **What's inside:** University exercises in embedded C programming
+- **Key files:** `main.c` (original learning code), `main_clean.c` (organized later)
+- **What I practiced:** GPIO control, timers, ADC reading, basic data structures
 
-### **🔴 FPGA Digital Design: Hardware Logic Implementation**
+### **🔴 FPGA Introduction**
 
 📁 [`zaj1_18.10.2024`](zaj1_18.10.2024)
 
-- **What you'll see:** Digital logic circuits described in VHDL
+- **What's inside:** Simple digital logic circuits as FPGA introduction
 - **Key files:** `led1.vhd`, `led2.vhd`, `switch.vhd`
-- **Skills shown:** Hardware description languages, logic synthesis, FPGA development
+- **What I explored:** Basic VHDL syntax, simple logic gates, Vivado workflow
 
 ---
 
-## � **Professional Highlights**
+## 📖 **Learning Journey**
 
-### **📈 Code Quality Evolution**
+### **� How This Repository Evolved**
 
-This portfolio demonstrates professional development practices:
+This collection represents my learning progression through university embedded systems courses:
 
-- **Learning Documentation** - Authentic university code showing the learning process
-- **Code Refactoring** - Clean, documented versions for production use
-- **Technical Writing** - Comprehensive documentation and educational materials
+- **Original Code** - Authentic learning process with experiments and iterations
+- **Later Organization** - Cleaned up and documented for better understanding
+- **Documentation Practice** - Learning to explain technical concepts clearly
 
-### **🔧 Industry-Ready Skills**
+### **🎓 Academic Experience Gained**
 
-- **Multi-platform Development** - Three different hardware architectures
-- **Professional Tool Usage** - Industry-standard development environments
-- **Hardware Integration** - Real-world embedded systems experience
-- **Documentation Excellence** - Technical writing suitable for team collaboration
+- **Multiple Platforms** - Exposure to different microcontroller families
+- **Tool Familiarity** - Hands-on experience with industry development environments
+- **Hardware Interaction** - Working with real embedded systems hardware
+- **Project Organization** - Learning to structure and document technical work
 
 ---
 
-## 🎯 **Technologies Mastered**
+## 📊 **Technologies Explored**
 
-| Category        | Technologies                                           | Proficiency Level |
-| --------------- | ------------------------------------------------------ | ----------------- |
-| **Programming** | Assembly (AVR), Embedded C, VHDL                       | ⭐⭐⭐⭐⭐        |
-| **Hardware**    | ATmega128, PIC24FJ128GA705, Zynq-7000 FPGA             | ⭐⭐⭐⭐⭐        |
-| **Tools**       | MPLAB X, Vivado, XC8/XC16, MCC, Git                    | ⭐⭐⭐⭐⭐        |
-| **Concepts**    | Real-time systems, Digital logic, Hardware abstraction | ⭐⭐⭐⭐⭐        |
+| Category | Technologies | Learning Level |
+|----------|-------------|---------------|
+| **Programming** | Assembly (AVR), Embedded C, VHDL | University coursework |
+| **Hardware** | ATmega128, PIC24FJ128GA705, Zynq-7000 FPGA | Hands-on lab work |
+| **Tools** | MPLAB X, Vivado, XC8/XC16, MCC, Git | Practical experience |
+| **Concepts** | Basic embedded systems, Simple digital logic | Introductory level |
 
 ---
 
@@ -151,34 +151,34 @@ This portfolio demonstrates professional development practices:
 
 ---
 
-## 📞 **Contact & Collaboration**
+## � **Questions & Discussion**
 
-**Interested in embedded systems development or have questions about these projects?**
+**Have questions about the code or embedded systems learning?**
 
-- 📧 **Professional Inquiries**: [Create an issue](https://github.com/JackobPunch/MicrocontrollerAndFPGAbasics/issues)
-- 🤝 **Collaboration**: Open to embedded systems projects and technical discussions
-- 📚 **Education**: Happy to help fellow students with embedded programming concepts
+- 📧 **Questions**: [Create an issue](https://github.com/JackobPunch/MicrocontrollerAndFPGAbasics/issues) if anything needs clarification
+- 🎓 **Learning**: Happy to discuss embedded programming concepts with fellow students
+- 🤝 **Feedback**: Always open to suggestions for improving documentation or code organization
 
 ---
 
-## 📄 **License & Usage**
+## 📄 **Usage & Learning**
 
-This portfolio is primarily educational. Feel free to:
+This repository contains university coursework and is shared for educational purposes. Feel free to:
 
-- ✅ **Study** the code and documentation
-- ✅ **Reference** techniques in your own projects
-- ✅ **Learn** from the progression and documentation style
-- ✅ **Ask questions** through GitHub issues
+- ✅ **Study** the code and learning progression
+- ✅ **Use** as reference for your own embedded systems learning  
+- ✅ **Learn** from both the messy and clean code versions
+- ✅ **Ask questions** if you're working on similar coursework
 
 ---
 
 <div align="center">
 
-**🎯 This portfolio demonstrates progression from fundamental assembly programming to advanced embedded systems development**
+**� University coursework documenting my journey learning embedded systems fundamentals**
 
 [![GitHub stars](https://img.shields.io/github/stars/JackobPunch/MicrocontrollerAndFPGAbasics?style=social)](https://github.com/JackobPunch/MicrocontrollerAndFPGAbasics/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/JackobPunch/MicrocontrollerAndFPGAbasics?style=social)](https://github.com/JackobPunch/MicrocontrollerAndFPGAbasics/network/members)
 
-_Built with passion for embedded systems and hardware programming_ 🚀
+*Learning embedded systems through hands-on university coursework* �
 
 </div>

@@ -118,12 +118,12 @@ This collection represents my learning progression through university embedded s
 
 ## 📊 **Technologies Explored**
 
-| Category | Technologies | Learning Level |
-|----------|-------------|---------------|
-| **Programming** | Assembly (AVR), Embedded C, VHDL | University coursework |
-| **Hardware** | ATmega128, PIC24FJ128GA705, Zynq-7000 FPGA | Hands-on lab work |
-| **Tools** | MPLAB X, Vivado, XC8/XC16, MCC, Git | Practical experience |
-| **Concepts** | Basic embedded systems, Simple digital logic | Introductory level |
+| Category        | Technologies                                 | Learning Level        |
+| --------------- | -------------------------------------------- | --------------------- |
+| **Programming** | Assembly (AVR), Embedded C, VHDL             | University coursework |
+| **Hardware**    | ATmega128, PIC24FJ128GA705, Zynq-7000 FPGA   | Hands-on lab work     |
+| **Tools**       | MPLAB X, Vivado, XC8/XC16, MCC, Git          | Practical experience  |
+| **Concepts**    | Basic embedded systems, Simple digital logic | Introductory level    |
 
 ---
 
@@ -166,7 +166,7 @@ This collection represents my learning progression through university embedded s
 This repository contains university coursework and is shared for educational purposes. Feel free to:
 
 - ✅ **Study** the code and learning progression
-- ✅ **Use** as reference for your own embedded systems learning  
+- ✅ **Use** as reference for your own embedded systems learning
 - ✅ **Learn** from both the messy and clean code versions
 - ✅ **Ask questions** if you're working on similar coursework
 
@@ -179,6 +179,6 @@ This repository contains university coursework and is shared for educational pur
 [![GitHub stars](https://img.shields.io/github/stars/JackobPunch/MicrocontrollerAndFPGAbasics?style=social)](https://github.com/JackobPunch/MicrocontrollerAndFPGAbasics/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/JackobPunch/MicrocontrollerAndFPGAbasics?style=social)](https://github.com/JackobPunch/MicrocontrollerAndFPGAbasics/network/members)
 
-*Learning embedded systems through hands-on university coursework* �
+_Learning embedded systems through hands-on university coursework_ �
 
 </div>
